@@ -21,13 +21,14 @@ header {
 }
 .brand-dealer + .branding {
   display: inline-block;
-  border-left: 1px solid #fff;
+  border-left: 1px solid rgba(189, 189, 189, 0.5);
   padding-left: .3em;
 }
 /** JUNBOTRON **/
 #jumbotron {
   height: 700px;
   background-image: url(../media/bgjunbotron.jpg);
+  background-position: center top;
 }
 .caption {
   padding: 2em;
@@ -298,4 +299,316 @@ footer {
 }
 footer.sec-style {
   padding-top: 2.5em;
+}
+
+/************************************************************/
+/************** RESPONSIVE **********************************/
+/************************************************************/
+@media (max-width: 1025px) {
+  .caption-title {
+    font-size: 3em;
+  }
+  #jumbotron {
+    height: 550px;
+  }
+}
+@media (max-width: 769px) {
+
+  .sec-style::before {
+    height: 85px;
+    top: -84px;
+  }
+  #jumbotron {
+    height: 550px;
+  }
+  .caption-btn {
+    font-size: 1.35em;
+  }
+  .brand-footer .branding {
+    font-size: 2.4em;
+    display: flex;
+    justify-content: center;
+  }
+  .brand-footer .branding + span {
+    font-size: 1.4em;
+    text-align: center !important;
+    margin: .5em auto;
+  }
+  .brand-footer span + img {
+    height: 50px;
+  }
+  .pb-10 {
+    padding-bottom: 7.5em !important;
+  }
+  .list-marks li img {
+    height: 85px;
+  }
+  .text-content {
+    padding: 0.5em;
+  }
+  #applying .title:not(.display-4) {
+    margin-top: .5em;
+  }
+  #applying .title:not(.display-4)::after {
+    bottom: -.3em;
+  }
+  #enterprise .title.display-4 {
+    font-size: 2.8em;
+  }
+  #enterprise .title:not(.display-4) {
+    font-size: 1.4em;
+  }
+  .sec-style {
+    padding-top: .5em;
+  }
+}
+@media (max-width: 426px) {
+  .branding {
+    font-size: 2.3em;
+  }
+  .brand-dealer {
+    height: 45px;
+    margin: 0.3em;
+  }
+  header .socials-links {
+    text-align: right;
+    border-top: 1px solid rgba(189, 189, 189, 0.5);
+    margin-top: .4em;
+    padding-top: .4em;
+  }
+  .sec-style::before {
+    height: 55px;
+    top: -54px;
+  }
+  #jumbotron {
+    height: 500px;
+  }
+  .caption {
+    padding: 0;
+    text-align: center;
+  }
+  .caption-title {
+    font-size: 2.8em;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
+  .title {
+    font-size: 2.15em;
+  }
+  .text.lead {
+    font-size: 1em;
+  }
+  .caption-btn {
+    font-size: 1.35em;
+  }
+  .brand-footer {
+    display: block;
+  }
+  .brand-footer .branding {
+    font-size: 3.4em;
+    display: flex;
+    justify-content: center;
+  }
+  .brand-footer .branding + span {
+    font-size: 1.5em;
+    text-align: center !important;
+    margin: .5em auto;
+  }
+  .brand-footer span + img {
+    height: 50px;
+    margin: auto;
+  }
+  .brand-footer span, .brand-footer img {
+    display: block;
+  }
+  .pb-10 {
+    padding-bottom: 5.5em !important;
+  }
+  .list-marks li img {
+    height: 70px;
+  }
+  .text-content {
+    padding: 0.5em;
+  }
+  #applying .title:not(.display-4) {
+    margin-top: .5em;
+  }
+  #applying .title:not(.display-4)::after {
+    bottom: -.3em;
+  }
+  #enterprise .title.display-4 {
+    font-size: 2.8em;
+  }
+  #enterprise .title:not(.display-4) {
+    font-size: 1.4em;
+  }
+  .sec-style {
+    padding-top: .5em;
+  }
+}
+@media (max-width: 376px) {
+  .branding {
+    font-size: 2em;
+  }
+  .brand-dealer {
+    height: 40px;
+    margin: 0.3em;
+  }
+  header .socials-links {
+    text-align: right;
+    border-top: 1px solid rgba(189, 189, 189, 0.5);
+    margin-top: .4em;
+    padding-top: .4em;
+  }
+  .sec-style::before {
+    height: 50px;
+    top: -49px;
+  }
+  #jumbotron {
+    height: 500px;
+  }
+  .caption {
+    padding: 0;
+    text-align: center;
+  }
+  .caption-title {
+    font-size: 2.5em;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
+  .title {
+    font-size: 2.15em;
+  }
+  .text.lead {
+    font-size: 1em;
+  }
+  .caption-btn {
+    font-size: 1.35em;
+  }
+  .brand-footer {
+    display: block;
+  }
+  .brand-footer .branding {
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+  }
+  .brand-footer .branding + span {
+    font-size: 1.3em;
+    text-align: center !important;
+    margin: .5em auto;
+  }
+  .brand-footer span + img {
+    height: 45px;
+    margin: auto;
+  }
+  .brand-footer span, .brand-footer img {
+    display: block;
+  }
+  .pb-10 {
+    padding-bottom: 5.5em !important;
+  }
+  .list-marks li img {
+    height: 70px;
+  }
+  .text-content {
+    padding: 0em;
+  }
+  #applying .title:not(.display-4) {
+    margin-top: .5em;
+  }
+  #applying .title:not(.display-4)::after {
+    bottom: -.3em;
+  }
+  #enterprise .title:not(.display-4) {
+    font-size: 1.4em;
+  }
+  .sec-style {
+    padding-top: .5em;
+  }
+}
+
+@media (max-width: 361px) {
+  .branding {
+    font-size: 1.7em;
+  }
+  .brand-dealer {
+    height: 30px;
+    margin: 0.3em;
+  }
+  header .socials-links {
+    text-align: right;
+    border-top: 1px solid rgba(189, 189, 189, 0.5);
+    margin-top: .4em;
+    padding-top: .4em;
+  }
+  .sec-style::before {
+    height: 50px;
+    top: -49px;
+  }
+  #jumbotron {
+    height: 450px;
+  }
+  .caption {
+    padding: 0;
+    text-align: center;
+  }
+  .caption-title {
+    font-size: 2.2em;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
+  .title {
+    font-size: 1.9em;
+  }
+  .text.lead {
+    font-size: 1em;
+  }
+  .caption-btn {
+    font-size: 1.2em;
+  }
+  .brand-footer {
+    display: block;
+  }
+  .brand-footer .branding {
+    font-size: 2.5em;
+    display: flex;
+    justify-content: center;
+  }
+  .brand-footer .branding + span {
+    font-size: 1em;
+    text-align: center !important;
+    margin: .5em auto;
+  }
+  .brand-footer span + img {
+    height: 40px;
+    margin: auto;
+  }
+  .brand-footer span, .brand-footer img {
+    display: block;
+  }
+  .pb-10 {
+    padding-bottom: 4.5em !important;
+  }
+  .list-marks li img {
+    height: 60px;
+  }
+  .text-content {
+    padding: 0em;
+  }
+  #applying .title:not(.display-4) {
+    margin-top: .5em;
+  }
+  #applying .title:not(.display-4)::after {
+    bottom: -.35em;
+  }
+  #enterprise .title.display-4 {
+    font-size: 2.5em;
+  }
+  #enterprise .title:not(.display-4) {
+    font-size: 1.5em;
+  }
+  .sec-style {
+    padding-top: .5em;
+  }
 }
