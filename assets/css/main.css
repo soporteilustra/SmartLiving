@@ -26,17 +26,65 @@ header {
 }
 /** JUNBOTRON **/
 #jumbotron {
+  position: relative;
   height: 700px;
+  width: 100%;
+}
+#jumbotron .bgjunbotron {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation-name: slidefade;
+  animation-duration: 12s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  opacity: 1;
+}
+#jumbotron .bgjunbotron:nth-child(1) {
   background-image: url(../media/bgjunbotron.jpg);
   background-position: center bottom;
   background-size: cover;
+  animation-delay: 8s;
 }
+#jumbotron .bgjunbotron:nth-child(2) {
+  background-image: url(../media/bgjunbotron2.jpg);
+  background-position: center bottom;
+  background-size: cover;
+  animation-delay: 4s;
+}
+#jumbotron .bgjunbotron:nth-child(3) {
+  background-image: url(../media/bgjunbotron3.jpg);
+  background-position: center bottom;
+  background-size: cover;
+  animation-delay: 0s;
+}
+@keyframes slidefade {
+  0% {
+    opacity: 1;
+  }
+  33.333% {
+    opacity: 0;
+  }
+  66.666% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .caption {
   padding: 2em;
 }
 .caption-title {
   font-family: 'PT Sans', sans-serif;
   color: #831414;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.caption h4 {
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
 }
 .caption-btn {
@@ -108,6 +156,11 @@ header {
 #enterprise .title:not(.display-4) {
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+#enterprise .text-box {
+  min-height: 200px;
+  display: flex;
+  align-items: center;
 }
 /** REGISTER **/
 #register {
