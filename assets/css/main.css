@@ -44,20 +44,20 @@ header {
   opacity: 1;
 }
 #jumbotron .bgjunbotron:nth-child(1) {
-  background-image: url(../media/bgjunbotron.jpg);
-  background-position: center bottom;
+  background-image: url(../media/bgjunbotron4.jpg);
+  background-position: center center;
   background-size: cover;
   animation-delay: 8s;
 }
 #jumbotron .bgjunbotron:nth-child(2) {
-  background-image: url(../media/bgjunbotron2.jpg);
-  background-position: center bottom;
+  background-image: url(../media/bgjunbotron5.jpg);
+  background-position: center center;
   background-size: cover;
   animation-delay: 4s;
 }
 #jumbotron .bgjunbotron:nth-child(3) {
   background-image: url(../media/bgjunbotron3.jpg);
-  background-position: center bottom;
+  background-position: center center;
   background-size: cover;
   animation-delay: 0s;
 }
@@ -84,14 +84,15 @@ header {
   font-family: 'PT Sans', sans-serif;
   color: #fff;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  animation-duration: 12s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
 }
 .caption h4 {
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
   padding-right: 2em;
+  animation-name: changeColor;
+  animation-duration: 12s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
 }
 .caption-btn {
   margin: 1em auto 0em auto;
@@ -104,16 +105,16 @@ header {
 
 @keyframes changeColor {
   0% {
-    color: #fff;
+    content: 'Disfruta lo mejor del cine o un concierto sin necesidad de salir de tu casa.';
   }
   33.333% {
-    color: #831414;
+    content: 'Controla los sistemas de iluminación y el otras funcionalidades de tu casa con un solo toque.';
   }
   66.666% {
-    color: #831414;
+    content: 'Monitorea el interior y exterior de tu casa, controlando la seguridad desde tu celular.';
   }
   100% {
-    color: #fff;
+    content: 'Disfruta lo mejor del cine o un concierto sin necesidad de salir de tu casa.';
   }
 }
 /** DESCRIPTION **/
